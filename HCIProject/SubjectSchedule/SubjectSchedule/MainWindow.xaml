@@ -8,8 +8,9 @@
         Title="MainWindow" Height="350" Width="525">
     <Grid>
         <DockPanel HorizontalAlignment="Left" Height="319" LastChildFill="False" VerticalAlignment="Top" Width="517">
-            <Grid Height="319" VerticalAlignment="Top" Width="101" RenderTransformOrigin="0.656,0.49"/>
-            <Grid Height="319" VerticalAlignment="Top" Width="101" RenderTransformOrigin="3.636,0.422" HorizontalAlignment="Right"/>
+            <Grid Height="319" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.656,0.49"/>
+            <DataGrid Height="319" VerticalAlignment="Top" Width="317"/>
+            <Grid Height="319" VerticalAlignment="Top" Width="100"/>
         </DockPanel>
 
     </Grid>
