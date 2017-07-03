@@ -1,0 +1,16 @@
+﻿<Window x:Class="SubjectSchedule.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SubjectSchedule"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <DockPanel HorizontalAlignment="Left" Height="319" LastChildFill="False" VerticalAlignment="Top" Width="517">
+            <Grid Height="319" VerticalAlignment="Top" Width="101" RenderTransformOrigin="0.656,0.49"/>
+            <Grid Height="319" VerticalAlignment="Top" Width="101" RenderTransformOrigin="3.636,0.422" HorizontalAlignment="Right"/>
+        </DockPanel>
+
+    </Grid>
+</Window>
