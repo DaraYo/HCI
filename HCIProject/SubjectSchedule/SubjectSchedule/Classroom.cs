@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SubjectSchedule
 {
-    class Classroom
+    public class Classroom
     {
         public Classroom() { }
 

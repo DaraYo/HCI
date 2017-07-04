@@ -5,13 +5,109 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SubjectSchedule"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        <DockPanel HorizontalAlignment="Left" Height="319" LastChildFill="False" VerticalAlignment="Top" Width="517">
-            <Grid Height="319" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.656,0.49"/>
-            <DataGrid Height="319" VerticalAlignment="Top" Width="317"/>
-            <Grid Height="319" VerticalAlignment="Top" Width="100"/>
-        </DockPanel>
+        Title="MainWindow"  Width="1300" Height="700">
 
-    </Grid>
+    <DockPanel HorizontalAlignment="Left"  LastChildFill="False" VerticalAlignment="Top" Width="1300" Height="700" >
+        <Grid  VerticalAlignment="Top" Margin="0,0,0,0" Width="1300" Height="700">
+            <ToolBarTray HorizontalAlignment="Left" Height="36" VerticalAlignment="Top"/>
+            <Grid x:Name="ClassroomsList" HorizontalAlignment="Left" Height="658" Margin="0,13,0,0" VerticalAlignment="Top" Width="150">
+                <Canvas x:Name="ClassroomCanvas" HorizontalAlignment="Left" Height="628" VerticalAlignment="Top" Width="150" Margin="0,20,0,0"/>
+            </Grid>
+            <Grid x:Name="ClassroomInfo" Background="Orange" HorizontalAlignment="Left" Height="45" Margin="150,36,0,0" VerticalAlignment="Top" Width="1140" RenderTransformOrigin="0.499,1.472">
+            </Grid>
+            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="590" Margin="155,81,181,29"  Width="964" AllowDrop="True">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <ListView Grid.Column="0" ItemsSource="{Binding termini}" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <WrapPanel>
+                                <TextBlock Text="{Binding}"/>
+                            </WrapPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <ListView Grid.Column="1" ItemsSource="{Binding termSubjs1}" AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop1">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <WrapPanel>
+                                <TextBlock Text="{Binding Label}" FontWeight="Bold" />
+                            </WrapPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <ListView Grid.Column="2" ItemsSource="{Binding termSubjs2}" AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop2">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <WrapPanel>
+                                <TextBlock Text="{Binding Label}" FontWeight="Bold" />
+                            </WrapPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <ListView Grid.Column="3" ItemsSource="{Binding termSubjs3}" AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop3">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <WrapPanel>
+                                <TextBlock Text="{Binding Label}" FontWeight="Bold" />
+                            </WrapPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <ListView Grid.Column="4" ItemsSource="{Binding termSubjs4}" AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop4">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <WrapPanel>
+                                <TextBlock Text="{Binding Label}" FontWeight="Bold" />
+                            </WrapPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <ListView Grid.Column="5" ItemsSource="{Binding termSubjs5}" AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop5">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <WrapPanel>
+                                <TextBlock Text="{Binding Label}" FontWeight="Bold" />
+                            </WrapPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <ListView Grid.Column="6" ItemsSource="{Binding termSubjs6}" AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop6">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <WrapPanel>
+                                <TextBlock Text="{Binding Label}" FontWeight="Bold" />
+                            </WrapPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
+            <Grid x:Name="SubjectsGrid" Background="DarkSeaGreen" HorizontalAlignment="Left" Height="590" Margin="1114,81,0,0" VerticalAlignment="Top" Width="176" RenderTransformOrigin="2.61,0.693" >
+
+                <ListView x:Name="ListViewN" Background="Transparent" ItemsSource="{Binding ocs}" PreviewMouseLeftButtonDown="ListView_PreviewMouseLeftButtonDown" MouseMove="ListView_MouseMove">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <WrapPanel>
+                                <TextBlock Text="{Binding Label}" FontWeight="Bold" />
+                            </WrapPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
+        </Grid>
+
+
+
+
+    </DockPanel>
 </Window>

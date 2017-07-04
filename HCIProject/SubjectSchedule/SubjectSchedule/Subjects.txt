@@ -1,0 +1,2 @@
+OOP2;Objektno orijentisano programiranje 2;SIIT;Huh?;20;1;false;true;false;W;naaah
+ISA;Internet softverske arhitekture;SIIT;Meh:);15;1;true;false;false;L;holoholo

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SubjectSchedule
 {
-    class Course
+    public class Course
     {
         private string label;
 
@@ -50,7 +50,5 @@ namespace SubjectSchedule
 
 
 
-    }
-}
     }
 }

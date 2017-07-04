@@ -1,0 +1,3 @@
+20GOZW;Labaratorija za MRS;20;false;false;true;GGEZPZ;W
+30GIZV;Labaratorija za ISA;30;false;false;true;PZMW20;W
+10ZXXY;Sala za experimente;10;true;true;false;EXLZ10;L

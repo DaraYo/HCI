@@ -3,16 +3,33 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel;
 
 namespace SubjectSchedule
 {
-    class Subject
+    public class Subject : INotifyPropertyChanged
     {
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected virtual void OnPropertyChanged(string Label)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(Label));
+            }
+        }
+    
         private string label;
         public string Label
         {
             get { return label; }
-            set { label = value; }
+            set
+            {
+                if (value != label)
+                {
+                    label = value;
+                    OnPropertyChanged("Label");
+                }
+            }
         }
 
         private string name;

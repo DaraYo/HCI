@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SubjectSchedule
 {
-    class Softvare
+    public class Softvare
     {
         private string label;
 
