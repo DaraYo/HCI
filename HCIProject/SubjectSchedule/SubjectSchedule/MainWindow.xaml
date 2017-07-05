@@ -10,8 +10,6 @@
     <DockPanel HorizontalAlignment="Left"  LastChildFill="False" VerticalAlignment="Top" Width="1300" Height="700" >
         <Grid  VerticalAlignment="Top" Margin="0,0,0,0" Width="1300" Height="700">
             <ToolBarTray HorizontalAlignment="Left" Height="36" VerticalAlignment="Top"/>
-            <Button  Click="Go_to_subjests" ToolTip="Show all subjests">
-            </Button>
             <Grid x:Name="ClassroomsList" HorizontalAlignment="Left" Height="658" Margin="0,13,0,0" VerticalAlignment="Top" Width="150">
                 <Canvas x:Name="ClassroomCanvas" HorizontalAlignment="Left" Height="628" VerticalAlignment="Top" Width="150" Margin="0,20,0,0"/>
             </Grid>
@@ -19,6 +17,25 @@
             </Grid>
             <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="590" Margin="155,81,181,29"  Width="964" AllowDrop="True">
                 <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
                     <RowDefinition />
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
@@ -29,70 +46,179 @@
                     <ColumnDefinition />
                     <ColumnDefinition />
                     <ColumnDefinition />
+
                 </Grid.ColumnDefinitions>
-                <ListView Grid.Column="0" ItemsSource="{Binding termini}" >
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <WrapPanel>
-                                <TextBlock Text="{Binding}"/>
-                            </WrapPanel>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
-                <ListView Grid.Column="1" ItemsSource="{Binding termSubjs1}" AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop1">
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <WrapPanel>
-                                <TextBlock Text="{Binding Label}" FontWeight="Bold" />
-                            </WrapPanel>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
-                <ListView Grid.Column="2" ItemsSource="{Binding termSubjs2}" AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop2">
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <WrapPanel>
-                                <TextBlock Text="{Binding Label}" FontWeight="Bold" />
-                            </WrapPanel>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
-                <ListView Grid.Column="3" ItemsSource="{Binding termSubjs3}" AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop3">
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <WrapPanel>
-                                <TextBlock Text="{Binding Label}" FontWeight="Bold" />
-                            </WrapPanel>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
-                <ListView Grid.Column="4" ItemsSource="{Binding termSubjs4}" AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop4">
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <WrapPanel>
-                                <TextBlock Text="{Binding Label}" FontWeight="Bold" />
-                            </WrapPanel>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
-                <ListView Grid.Column="5" ItemsSource="{Binding termSubjs5}" AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop5">
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <WrapPanel>
-                                <TextBlock Text="{Binding Label}" FontWeight="Bold" />
-                            </WrapPanel>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
-                <ListView Grid.Column="6" ItemsSource="{Binding termSubjs6}" AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop6">
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <WrapPanel>
-                                <TextBlock Text="{Binding Label}" FontWeight="Bold" />
-                            </WrapPanel>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
+                <TextBlock Grid.Column="0" Grid.Row="0"  Text="Termini"/>
+                <TextBlock Grid.Column="1" Grid.Row="0"  Text="{Binding termSubjs1[0]}"/>
+                <TextBlock Grid.Column="2" Grid.Row="0"  Text="{Binding termSubjs2[0]}"/>
+                <TextBlock Grid.Column="3" Grid.Row="0"  Text="{Binding termSubjs3[0]}"/>
+                <TextBlock Grid.Column="4" Grid.Row="0"  Text="{Binding termSubjs4[0]}"/>
+                <TextBlock Grid.Column="5" Grid.Row="0"  Text="{Binding termSubjs5[0]}"/>
+                <TextBlock Grid.Column="6" Grid.Row="0"  Text="{Binding termSubjs6[0]}"/>
+
+
+                <TextBlock  Grid.Column="0" Grid.Row="1"  Text="{Binding termini[1]}"/>
+                <TextBlock x:Name ="TB11" Grid.Column="1" Grid.Row="1"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop11" Text="{Binding termSubjs1[1]}"/>
+                <TextBlock x:Name ="TB12" Grid.Column="2" Grid.Row="1"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop12" Text="{Binding termSubjs2[1]}"/>
+                <TextBlock x:Name ="TB13" Grid.Column="3" Grid.Row="1"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop13" Text="{Binding termSubjs3[1]}"/>
+                <TextBlock x:Name ="TB14" Grid.Column="4" Grid.Row="1"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop14" Text="{Binding termSubjs4[1]}"/>
+                <TextBlock x:Name ="TB15" Grid.Column="5" Grid.Row="1"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop15" Text="{Binding termSubjs5[1]}"/>
+                <TextBlock x:Name ="TB16" Grid.Column="6" Grid.Row="1"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop16" Text="{Binding termSubjs6[1]}"/>
+
+                <TextBlock  Grid.Column="0" Grid.Row="2"  Text="{Binding termini[2]}"/>
+                <TextBlock x:Name ="TB21" Grid.Column="1" Grid.Row="2"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop21" Text="{Binding termSubjs1[2]}"/>
+                <TextBlock x:Name ="TB22" Grid.Column="2" Grid.Row="2"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop22" Text="{Binding termSubjs2[2]}"/>
+                <TextBlock x:Name ="TB23" Grid.Column="3" Grid.Row="2"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop23" Text="{Binding termSubjs3[2]}"/>
+                <TextBlock x:Name ="TB24" Grid.Column="4" Grid.Row="2"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop24" Text="{Binding termSubjs4[2]}"/>
+                <TextBlock x:Name ="TB25" Grid.Column="5" Grid.Row="2"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop25" Text="{Binding termSubjs5[2]}"/>
+                <TextBlock x:Name ="TB26" Grid.Column="6" Grid.Row="2"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop26" Text="{Binding termSubjs6[2]}"/>
+
+                <TextBlock  Grid.Column="0" Grid.Row="3"  Text="{Binding termini[3]}"/>
+                <TextBlock x:Name ="TB31" Grid.Column="1" Grid.Row="3"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop31" Text="{Binding termSubjs1[3]}"/>
+                <TextBlock x:Name ="TB32" Grid.Column="2" Grid.Row="3"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop32" Text="{Binding termSubjs2[3]}"/>
+                <TextBlock x:Name ="TB33" Grid.Column="3" Grid.Row="3"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop33" Text="{Binding termSubjs3[3]}"/>
+                <TextBlock x:Name ="TB34" Grid.Column="4" Grid.Row="3"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop34" Text="{Binding termSubjs4[3]}"/>
+                <TextBlock x:Name ="TB35" Grid.Column="5" Grid.Row="3"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop35" Text="{Binding termSubjs5[3]}"/>
+                <TextBlock x:Name ="TB36" Grid.Column="6" Grid.Row="4"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop36" Text="{Binding termSubjs6[3]}"/>
+
+
+                <TextBlock  Grid.Column="0" Grid.Row="4"  Text="{Binding termini[4]}"/>
+                <TextBlock x:Name ="TB41" Grid.Column="1" Grid.Row="3"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop41" Text="{Binding termSubjs1[4]}"/>
+                <TextBlock x:Name ="TB42" Grid.Column="2" Grid.Row="3"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop42" Text="{Binding termSubjs2[4]}"/>
+                <TextBlock x:Name ="TB43" Grid.Column="3" Grid.Row="3"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop43" Text="{Binding termSubjs3[4]}"/>
+                <TextBlock x:Name ="TB44" Grid.Column="4" Grid.Row="3"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop44" Text="{Binding termSubjs4[4]}"/>
+                <TextBlock x:Name ="TB45" Grid.Column="5" Grid.Row="3"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop45" Text="{Binding termSubjs5[4]}"/>
+                <TextBlock x:Name ="TB46" Grid.Column="6" Grid.Row="3"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop46" Text="{Binding termSubjs6[4]}"/>
+
+                <TextBlock  Grid.Column="0" Grid.Row="5"  Text="{Binding termini[5]}"/>
+                <TextBlock x:Name ="TB51" Grid.Column="1" Grid.Row="5"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop51" Text="{Binding termSubjs1[5]}"/>
+                <TextBlock x:Name ="TB52" Grid.Column="2" Grid.Row="5"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop52" Text="{Binding termSubjs2[5]}"/>
+                <TextBlock x:Name ="TB53" Grid.Column="3" Grid.Row="5"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop53" Text="{Binding termSubjs3[5]}"/>
+                <TextBlock x:Name ="TB54" Grid.Column="4" Grid.Row="5"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop54" Text="{Binding termSubjs4[5]}"/>
+                <TextBlock x:Name ="TB55" Grid.Column="5" Grid.Row="5"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop55" Text="{Binding termSubjs5[5]}"/>
+                <TextBlock x:Name ="TB56" Grid.Column="6" Grid.Row="5"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop56" Text="{Binding termSubjs6[5]}"/>
+
+                <TextBlock  Grid.Column="0" Grid.Row="6"  Text="{Binding termini[6]}"/>
+                <TextBlock x:Name ="TB61" Grid.Column="1" Grid.Row="6"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop61" Text="{Binding termSubjs1[6]}"/>
+                <TextBlock x:Name ="TB62" Grid.Column="2" Grid.Row="6"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop62" Text="{Binding termSubjs2[6]}"/>
+                <TextBlock x:Name ="TB63" Grid.Column="3" Grid.Row="6"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop63" Text="{Binding termSubjs3[6]}"/>
+                <TextBlock x:Name ="TB64" Grid.Column="4" Grid.Row="6"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop64" Text="{Binding termSubjs4[6]}"/>
+                <TextBlock x:Name ="TB65" Grid.Column="5" Grid.Row="6"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop65" Text="{Binding termSubjs5[6]}"/>
+                <TextBlock x:Name ="TB66" Grid.Column="6" Grid.Row="6"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop66" Text="{Binding termSubjs6[6]}"/>
+
+                <TextBlock  Grid.Column="0" Grid.Row="7"  Text="{Binding termini[7]}"/>
+                <TextBlock x:Name ="TB71" Grid.Column="1" Grid.Row="7"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop71" Text="{Binding termSubjs1[7]}"/>
+                <TextBlock x:Name ="TB72" Grid.Column="2" Grid.Row="7"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop72" Text="{Binding termSubjs2[7]}"/>
+                <TextBlock x:Name ="TB73" Grid.Column="3" Grid.Row="7"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop73" Text="{Binding termSubjs3[7]}"/>
+                <TextBlock x:Name ="TB74" Grid.Column="4" Grid.Row="7"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop74" Text="{Binding termSubjs4[7]}"/>
+                <TextBlock x:Name ="TB75" Grid.Column="5" Grid.Row="7"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop75" Text="{Binding termSubjs5[7]}"/>
+                <TextBlock x:Name ="TB76" Grid.Column="6" Grid.Row="7"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop76" Text="{Binding termSubjs6[7]}"/>
+
+                <TextBlock  Grid.Column="0" Grid.Row="8"  Text="{Binding termini[8]}"/>
+                <TextBlock x:Name ="TB81" Grid.Column="1" Grid.Row="8"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop81" Text="{Binding termSubjs1[8]}"/>
+                <TextBlock x:Name ="TB82" Grid.Column="2" Grid.Row="8"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop82" Text="{Binding termSubjs2[8]}"/>
+                <TextBlock x:Name ="TB83" Grid.Column="3" Grid.Row="8"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop83" Text="{Binding termSubjs3[8]}"/>
+                <TextBlock x:Name ="TB84" Grid.Column="4" Grid.Row="8"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop84" Text="{Binding termSubjs4[8]}"/>
+                <TextBlock x:Name ="TB85" Grid.Column="5" Grid.Row="8"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop85" Text="{Binding termSubjs5[8]}"/>
+                <TextBlock x:Name ="TB86" Grid.Column="6" Grid.Row="8"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop86" Text="{Binding termSubjs6[8]}"/>
+
+                <TextBlock  Grid.Column="0" Grid.Row="9"  Text="{Binding termini[9]}"/>
+                <TextBlock x:Name ="TB91" Grid.Column="1" Grid.Row="9"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop91" Text="{Binding termSubjs1[9]}"/>
+                <TextBlock x:Name ="TB92" Grid.Column="2" Grid.Row="9"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop92" Text="{Binding termSubjs2[9]}"/>
+                <TextBlock x:Name ="TB93" Grid.Column="3" Grid.Row="9"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop93" Text="{Binding termSubjs3[9]}"/>
+                <TextBlock x:Name ="TB94" Grid.Column="4" Grid.Row="9"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop94" Text="{Binding termSubjs4[9]}"/>
+                <TextBlock x:Name ="TB95" Grid.Column="5" Grid.Row="9"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop95" Text="{Binding termSubjs5[9]}"/>
+                <TextBlock x:Name ="TB96" Grid.Column="6" Grid.Row="9"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop96" Text="{Binding termSubjs6[9]}"/>
+
+                <TextBlock  Grid.Column="0" Grid.Row="10"  Text="{Binding termini[10]}"/>
+                <TextBlock x:Name ="TB101" Grid.Column="1" Grid.Row="10"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop101" Text="{Binding termSubjs1[10]}"/>
+                <TextBlock x:Name ="TB102" Grid.Column="2" Grid.Row="10"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop102" Text="{Binding termSubjs2[10]}"/>
+                <TextBlock x:Name ="TB103" Grid.Column="3" Grid.Row="10"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop103" Text="{Binding termSubjs3[10]}"/>
+                <TextBlock x:Name ="TB104" Grid.Column="4" Grid.Row="10"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop104" Text="{Binding termSubjs4[10]}"/>
+                <TextBlock x:Name ="TB105" Grid.Column="5" Grid.Row="10"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop105" Text="{Binding termSubjs5[10]}"/>
+                <TextBlock x:Name ="TB106" Grid.Column="6" Grid.Row="10"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop106" Text="{Binding termSubjs6[10]}"/>
+
+                <TextBlock  Grid.Column="0" Grid.Row="11"  Text="{Binding termini[11]}"/>
+                <TextBlock x:Name ="TB111" Grid.Column="1" Grid.Row="11"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop111" Text="{Binding termSubjs1[11]}"/>
+                <TextBlock x:Name ="TB112" Grid.Column="2" Grid.Row="11"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop112" Text="{Binding termSubjs2[11]}"/>
+                <TextBlock x:Name ="TB113" Grid.Column="3" Grid.Row="11"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop113" Text="{Binding termSubjs3[11]}"/>
+                <TextBlock x:Name ="TB114" Grid.Column="4" Grid.Row="11"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop114" Text="{Binding termSubjs4[11]}"/>
+                <TextBlock x:Name ="TB115" Grid.Column="5" Grid.Row="11"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop115" Text="{Binding termSubjs5[11]}"/>
+                <TextBlock x:Name ="TB116" Grid.Column="6" Grid.Row="11"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop116" Text="{Binding termSubjs6[11]}"/>
+
+                <TextBlock  Grid.Column="0" Grid.Row="12"  Text="{Binding termini[12]}"/>
+                <TextBlock x:Name ="TB121" Grid.Column="1" Grid.Row="12"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop121" Text="{Binding termSubjs1[12]}"/>
+                <TextBlock x:Name ="TB122" Grid.Column="2" Grid.Row="12"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop122" Text="{Binding termSubjs2[12]}"/>
+                <TextBlock x:Name ="TB123" Grid.Column="3" Grid.Row="12"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop123" Text="{Binding termSubjs3[12]}"/>
+                <TextBlock x:Name ="TB124" Grid.Column="4" Grid.Row="12"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop124" Text="{Binding termSubjs4[12]}"/>
+                <TextBlock x:Name ="TB125" Grid.Column="5" Grid.Row="12"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop125" Text="{Binding termSubjs5[12]}"/>
+                <TextBlock x:Name ="TB126" Grid.Column="6" Grid.Row="12"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop126" Text="{Binding termSubjs6[12]}"/>
+
+		        <TextBlock  Grid.Column="0" Grid.Row="13"  Text="{Binding termini[13]}"/>
+                <TextBlock x:Name ="TB131" Grid.Column="1" Grid.Row="13"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop131" Text="{Binding termSubjs1[13]}"/>
+                <TextBlock x:Name ="TB132" Grid.Column="2" Grid.Row="13"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop132" Text="{Binding termSubjs2[13]}"/>
+                <TextBlock x:Name ="TB133" Grid.Column="3" Grid.Row="13"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop133" Text="{Binding termSubjs3[13]}"/>
+                <TextBlock x:Name ="TB134" Grid.Column="4" Grid.Row="13"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop134" Text="{Binding termSubjs4[13]}"/>
+                <TextBlock x:Name ="TB135" Grid.Column="5" Grid.Row="13"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop135" Text="{Binding termSubjs5[13]}"/>
+                <TextBlock x:Name ="TB136" Grid.Column="6" Grid.Row="13"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop136" Text="{Binding termSubjs6[13]}"/>
+
+		        <TextBlock  Grid.Column="0" Grid.Row="14"  Text="{Binding termini[14]}"/>
+                <TextBlock x:Name ="TB141" Grid.Column="1" Grid.Row="14"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop141" Text="{Binding termSubjs1[14]}"/>
+                <TextBlock x:Name ="TB142" Grid.Column="2" Grid.Row="14"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop142" Text="{Binding termSubjs2[14]}"/>
+                <TextBlock x:Name ="TB143" Grid.Column="3" Grid.Row="14"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop143" Text="{Binding termSubjs3[14]}"/>
+                <TextBlock x:Name ="TB144" Grid.Column="4" Grid.Row="14"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop144" Text="{Binding termSubjs4[14]}"/>
+                <TextBlock x:Name ="TB145" Grid.Column="5" Grid.Row="14"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop145" Text="{Binding termSubjs5[14]}"/>
+                <TextBlock x:Name ="TB146" Grid.Column="6" Grid.Row="14"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop146" Text="{Binding termSubjs6[14]}"/>
+
+		        <TextBlock  Grid.Column="0" Grid.Row="15"  Text="{Binding termini[15]}"/>
+                <TextBlock x:Name ="TB151" Grid.Column="1" Grid.Row="15"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop151" Text="{Binding termSubjs1[15]}"/>
+                <TextBlock x:Name ="TB152" Grid.Column="2" Grid.Row="15"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop152" Text="{Binding termSubjs2[15]}"/>
+                <TextBlock x:Name ="TB153" Grid.Column="3" Grid.Row="15"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop153" Text="{Binding termSubjs3[15]}"/>
+                <TextBlock x:Name ="TB154" Grid.Column="4" Grid.Row="15"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop154" Text="{Binding termSubjs4[15]}"/>
+                <TextBlock x:Name ="TB155" Grid.Column="5" Grid.Row="15"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop155" Text="{Binding termSubjs5[15]}"/>
+                <TextBlock x:Name ="TB156" Grid.Column="6" Grid.Row="15"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop156" Text="{Binding termSubjs6[15]}"/>
+
+		        <TextBlock  Grid.Column="0" Grid.Row="16"  Text="{Binding termini[16]}"/>
+                <TextBlock x:Name ="TB161" Grid.Column="1" Grid.Row="16"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop161" Text="{Binding termSubjs1[16]}"/>
+                <TextBlock x:Name ="TB162" Grid.Column="2" Grid.Row="16"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop162" Text="{Binding termSubjs2[16]}"/>
+                <TextBlock x:Name ="TB163" Grid.Column="3" Grid.Row="16"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop163" Text="{Binding termSubjs3[16]}"/>
+                <TextBlock x:Name ="TB164" Grid.Column="4" Grid.Row="16"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop164" Text="{Binding termSubjs4[16]}"/>
+                <TextBlock x:Name ="TB165" Grid.Column="5" Grid.Row="16"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop165" Text="{Binding termSubjs5[16]}"/>
+                <TextBlock x:Name ="TB166" Grid.Column="6" Grid.Row="16"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop166" Text="{Binding termSubjs6[16]}"/>
+
+		        <TextBlock  Grid.Column="0" Grid.Row="17"  Text="{Binding termini[17]}"/>
+                <TextBlock x:Name ="TB171" Grid.Column="1" Grid.Row="17"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop171" Text="{Binding termSubjs1[17]}"/>
+                <TextBlock x:Name ="TB172" Grid.Column="2" Grid.Row="17"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop172" Text="{Binding termSubjs2[17]}"/>
+                <TextBlock x:Name ="TB173" Grid.Column="3" Grid.Row="17"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop173" Text="{Binding termSubjs3[17]}"/>
+                <TextBlock x:Name ="TB174" Grid.Column="4" Grid.Row="17"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop174" Text="{Binding termSubjs4[17]}"/>
+                <TextBlock x:Name ="TB175" Grid.Column="5" Grid.Row="17"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop175" Text="{Binding termSubjs5[17]}"/>
+                <TextBlock x:Name ="TB176" Grid.Column="6" Grid.Row="17"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop176" Text="{Binding termSubjs6[17]}"/>
+		
+		        <TextBlock  Grid.Column="0" Grid.Row="18"  Text="{Binding termini[18]}"/>
+                <TextBlock x:Name ="TB181" Grid.Column="1" Grid.Row="18"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop181" Text="{Binding termSubjs1[18]}"/>
+                <TextBlock x:Name ="TB182" Grid.Column="2" Grid.Row="18"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop182" Text="{Binding termSubjs2[18]}"/>
+                <TextBlock x:Name ="TB183" Grid.Column="3" Grid.Row="18"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop183" Text="{Binding termSubjs3[18]}"/>
+                <TextBlock x:Name ="TB184" Grid.Column="4" Grid.Row="18"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop184" Text="{Binding termSubjs4[18]}"/>
+                <TextBlock x:Name ="TB185" Grid.Column="5" Grid.Row="18"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop185" Text="{Binding termSubjs5[18]}"/>
+                <TextBlock x:Name ="TB186" Grid.Column="6" Grid.Row="18"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop186" Text="{Binding termSubjs6[18]}"/>
+
+		        <TextBlock  Grid.Column="0" Grid.Row="19"  Text="{Binding termini[19]}"/>
+                <TextBlock x:Name ="TB191" Grid.Column="1" Grid.Row="19"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop191" Text="{Binding termSubjs1[19]}"/>
+                <TextBlock x:Name ="TB192" Grid.Column="2" Grid.Row="19"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop192" Text="{Binding termSubjs2[19]}"/>
+                <TextBlock x:Name ="TB193" Grid.Column="3" Grid.Row="19"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop193" Text="{Binding termSubjs3[19]}"/>
+                <TextBlock x:Name ="TB194" Grid.Column="4" Grid.Row="19"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop194" Text="{Binding termSubjs4[19]}"/>
+                <TextBlock x:Name ="TB195" Grid.Column="5" Grid.Row="19"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop195" Text="{Binding termSubjs5[19]}"/>
+                <TextBlock x:Name ="TB196" Grid.Column="6" Grid.Row="19"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop196" Text="{Binding termSubjs6[19]}"/>
+
+
+		        <TextBlock  Grid.Column="0" Grid.Row="20"  Text="{Binding termini[20]}"/>
+                <TextBlock x:Name ="TB201" Grid.Column="1" Grid.Row="20"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop201" Text="{Binding termSubjs1[20]}"/>
+                <TextBlock x:Name ="TB202" Grid.Column="2" Grid.Row="20"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop202" Text="{Binding termSubjs2[20]}"/>
+                <TextBlock x:Name ="TB203" Grid.Column="3" Grid.Row="20"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop203" Text="{Binding termSubjs3[20]}"/>
+                <TextBlock x:Name ="TB204" Grid.Column="4" Grid.Row="20"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop204" Text="{Binding termSubjs4[20]}"/>
+                <TextBlock x:Name ="TB205" Grid.Column="5" Grid.Row="20"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop205" Text="{Binding termSubjs5[20]}"/>
+                <TextBlock x:Name ="TB206" Grid.Column="6" Grid.Row="20"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop206" Text="{Binding termSubjs6[20]}"/>
+
             </Grid>
             <Grid x:Name="SubjectsGrid" Background="DarkSeaGreen" HorizontalAlignment="Left" Height="590" Margin="1114,81,0,0" VerticalAlignment="Top" Width="176" RenderTransformOrigin="2.61,0.693" >
 
