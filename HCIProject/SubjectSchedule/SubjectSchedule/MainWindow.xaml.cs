@@ -1588,5 +1588,12 @@ namespace SubjectSchedule
             }
             File.WriteAllLines("../../ClassroomSchedule/"+this.label+".txt", lista);
         }
+
+        //#############################################################################################
+        private void Go_to_subjects(object sender, RoutedEventArgs e)
+        {
+            var allSubjects = new Subjests(this);
+            allSubjects.Show();
+        }
     }
 }

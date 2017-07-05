@@ -7,9 +7,15 @@
         mc:Ignorable="d"
         Title="Subjests" Height="300" Width="300">
     <Grid>
-        <DataGrid x:Name="dgSubs" Height="Auto" VerticalAlignment="Top" ColumnWidth="Auto"  Width="Auto">
-        </DataGrid>
-        <Grid Height="25" HorizontalAlignment="Left" Name="grid1" VerticalAlignment="Bottom" Width="278">
-        </Grid>
+        <ListView x:Name="dgSubs" Background="Transparent" ItemsSource="{Binding Subs}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <WrapPanel>
+                        <TextBlock Text="{Binding Label}" FontWeight="Bold" />
+                        <TextBlock Text="{Binding Name}" FontWeight="Bold" />
+                    </WrapPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </Grid>
 </Window>

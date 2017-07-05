@@ -9,7 +9,15 @@
 
     <DockPanel HorizontalAlignment="Left"  LastChildFill="False" VerticalAlignment="Top" Width="1300" Height="700" >
         <Grid  VerticalAlignment="Top" Margin="0,0,0,0" Width="1300" Height="700">
-            <ToolBarTray HorizontalAlignment="Left" Height="36" VerticalAlignment="Top"/>
+            <ToolBarTray HorizontalAlignment="Left" Height="36" VerticalAlignment="Top">
+                <ToolBar Width="Auto" Height="30" x:Name="ToolBD" ToolBarTray.IsLocked="True" ToolBar.OverflowMode="Never" Background="LightPink">
+                    <Button  Click="Go_to_subjects" ToolTip="List of all subjects" >
+                        <StackPanel>
+                            <TextBlock>TABELA SVIH PREDMETA</TextBlock>
+                        </StackPanel>
+                    </Button>
+                </ToolBar>
+            </ToolBarTray>
             <Grid x:Name="ClassroomsList" HorizontalAlignment="Left" Height="658" Margin="0,13,0,0" VerticalAlignment="Top" Width="150">
                 <Canvas x:Name="ClassroomCanvas" HorizontalAlignment="Left" Height="628" VerticalAlignment="Top" Width="150" Margin="0,20,0,0"/>
             </Grid>

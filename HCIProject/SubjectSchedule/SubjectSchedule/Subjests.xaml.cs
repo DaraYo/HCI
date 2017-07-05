@@ -35,21 +35,46 @@ namespace SubjectSchedule
         {
             InitializeComponent();
             this.mainWindow = mw;
-            String[] allSubs = File.ReadAllLines("../../config/library.txt");
-
-            Subs = new ObservableCollection<Subject>();
-
-            if (allSubs.Length != 0)
-                foreach (var item in allSubs)
+            String[] subjects = File.ReadAllLines("../../Subjects.txt");
+            List<Subject> l = new List<Subject>();
+            if (subjects.Length != 0)
+                foreach (var su in subjects)
                 {
-                    string[] items = item.Split('/');
-                    Subs.Add(new Subject { });
+                    String[] parts = su.Split(';');
+                    Subject s = new Subject();
+                    s.Label = parts[0];
+                    s.Name = parts[1];
+                    //s.Course = parts[2];
+                    s.Description = parts[3];
+                    s.GroupSize = int.Parse(parts[4]);
+                    s.PeriodNum = int.Parse(parts[5]);
+                    Console.WriteLine(parts[5]);
+                    Console.WriteLine(parts[1]);
+                    Console.WriteLine("Something else");
+                    if (parts[6].Equals("true"))
+                        s.Board = true;
+                    else
+                        s.Board = false;
+                    if (parts[7].Equals("true"))
+                        s.Projector = true;
+                    else
+                        s.Projector = false;
+                    if (parts[8].Equals("true"))
+                        s.SmartBoard = true;
+                    else
+                        s.SmartBoard = false;
+                    s.Os = parts[9];
+                    //s.Softvare = parts[10];
+                    l.Add(new Subject { Name = "Test" });
+                    //l.Add(s);
                 }
-        }
+            dgSubs.Items.Refresh();
+            Subs = new ObservableCollection<Subject>(l);
 
-        /*public Subjests(MainWindow mainWindow)
-        {
-            this.mainWindow = mainWindow;
-        }*/
+            /*public Subjests(MainWindow mainWindow)
+            {
+                this.mainWindow = mainWindow;
+            }*/
+        }
     }
 }

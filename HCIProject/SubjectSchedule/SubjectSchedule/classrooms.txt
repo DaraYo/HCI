@@ -9,4 +9,3 @@
 06OOJ;Sala za algebru;20;false;true;true;ALG;W
 007B;Racunarska sala;20;true;true;false;RAC;W
 08DD;Laboratorija za programiranje;20;true;true;false;PRG;W
-
