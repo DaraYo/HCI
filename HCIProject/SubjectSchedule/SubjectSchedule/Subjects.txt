@@ -1,2 +1,11 @@
-OOP2;Objektno orijentisano programiranje 2;SIIT;Huh?;20;1;false;true;false;W;naaah
+OOP2;Objektno orijentisano programiranje 2;SIIT;Osnove objektno orijentisanog programiranja;20;1;false;true;false;W;naaah
 ISA;Internet softverske arhitekture;SIIT;Meh:);15;1;true;false;false;L;holoholo
+MRS; Metodologije razvoja softvera;SIIT; Upoznavanje sa zivotnim ciklusom softverskog prozivoda;20;1;true;false;false;W;aaa
+USI; Uvod u softversko inzenjerstvo;SIIT; Razvoj softverskog inzenjerstva; 15; true;true;false;W;aaaa
+MA;Matematicka analiza;E2; Opis nije potreban; 20;true;true;true;W;aaaaa
+OE;Osnovi elektrotehnike; E2; bla bla truc;15;false;true;false;W;bbbb
+FI; Fizika;E2; Upoznavanje fizickih procesa na kojima se zasniva rad racunara i drugih tehnickih uredjaja;20;false;true;true;L;aaaa
+WP; Web programiranje; SIIT; Upoznavanje sa osnovama web programiranja;20;true;false;false;W;jjjjjj
+PIGKUT; Pisana i govorna komunikacija u tehnici; SIIT; Vestine komunikacije u tehnici;15;true;false;false;W;aaa
+AL; Algebra; SIIT; Osnove algebre; 20; false;true;false;W;aaaaaaaaaaaa
+MA2;Matematicka analiza 2;E1;Opis ne treba;20;false;true;false;W;bbbbbb

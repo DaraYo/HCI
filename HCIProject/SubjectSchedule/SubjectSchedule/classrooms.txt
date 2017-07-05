@@ -1,3 +1,12 @@
-20GOZW;Labaratorija za MRS;20;false;false;false;GGEZPZ;W
-30GIZV;Labaratorija za ISA;30;true;true;ture;PZMW20;W
-10ZXXY;Sala za experimente;10;true;true;false;EXLZ10;L
+20GOZW;Laboratorija za MRS;20;false;false;false;GGEZPZ;W
+30GIZV;Laboratorija za ISA;30;true;true;ture;PZMW20;W
+10ZXXY;Sala za eksperimente;10;true;true;false;EXLZ10;L
+01NNM;Sala za prezentacije;20;true;true;true;FFHJ10;W
+02NNK;Laboratorija za matematiku;20;false;true;false;KKKNM;W
+03NNL;Laboratorija za fiziku;20;true;true;true;KKKJJJ;L
+04RTR;Laboratorija za elektrotehniku;15;true;true;false;WPPW;W
+05RTR;Sala za pisanu i govornu komunikaciju;20;true;false;false;PIGU;W
+06OOJ;Sala za algebru;20;false;true;true;ALG;W
+007B;Racunarska sala;20;true;true;false;RAC;W
+08DD;Laboratorija za programiranje;20;true;true;false;PRG;W
+
