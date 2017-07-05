@@ -329,5 +329,11 @@ namespace SubjectSchedule
                 termSubjs6.Add(student);
             }
         }
+
+        private void Go_to_subjests(object sender, RoutedEventArgs e)
+        {
+            var subjests = new Subjests(this);
+            subjests.Show();
+        }
     }
 }
