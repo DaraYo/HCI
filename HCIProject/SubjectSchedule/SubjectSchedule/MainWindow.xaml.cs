@@ -76,6 +76,10 @@ namespace SubjectSchedule
         public MainWindow()
         {
             InitializeComponent();
+            CommandBinding helpBinding = new CommandBinding(ApplicationCommands.Help);
+            helpBinding.CanExecute += CanHelpExecute;
+            helpBinding.Executed += HelpExecuted;
+            CommandBindings.Add(helpBinding);
             listClassrooms();
             //loadTerms();
             ls.Add(new Subject { Label = "Testiranje-.-" });
@@ -4027,6 +4031,17 @@ namespace SubjectSchedule
         {
             TextBlock obj = sender as TextBlock;
             obj.FontSize = 12;
+        }
+
+        private void CanHelpExecute(object sender, CanExecuteRoutedEventArgs e)
+        {
+            e.CanExecute = true;
+        }
+        private void HelpExecuted(object sender, ExecutedRoutedEventArgs e)
+        {
+            MessageBox.Show("Ova aplikacija namenjena je  vođenje evidencije o rasporedu predmeta u računarskom centru. Nastava iz odredjenih predmeta izvodi se u ucionicama koje imaju svoj naziv.Svaki predmet izvodi se u odredjenom terminu i u odredjenom kabinetu. Ukoliko zelite da neki predmet postavite u raspored potrebno je  najpre da izabere ucionicu u kojoj se taj predmet izvod a zatim da ga prevucete iz liste predmeta i postavite na zeljeni dan i termin. Brisanje predmeta iz kalendara mozete uraditi primenom precice ***** ", "Help!");
+
+
         }
     }
 }
