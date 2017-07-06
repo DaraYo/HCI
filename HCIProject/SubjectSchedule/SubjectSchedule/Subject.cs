@@ -37,7 +37,13 @@ namespace SubjectSchedule
         public string Name
         {
             get { return name; }
-            set { name = value; }
+            set {
+                if (value != name)
+                {
+                    name = value;
+                    OnPropertyChanged("Name");
+                }
+            }
         }
 
         private Course course;
@@ -45,7 +51,13 @@ namespace SubjectSchedule
         public Course Course
         {
             get { return course; }
-            set { course = value; }
+            set {
+                if (value != course)
+                {
+                    course = value;
+                    OnPropertyChanged("Course");
+                }
+            }
         }
 
         private string description;
@@ -53,7 +65,13 @@ namespace SubjectSchedule
         public string Description
         {
             get { return description; }
-            set { description = value; }
+            set {
+                if (value != description)
+                {
+                    description = value;
+                    OnPropertyChanged("Description");
+                }
+            }
         }
 
         private int groupSize;
@@ -61,7 +79,14 @@ namespace SubjectSchedule
         public int GroupSize
         {
             get { return groupSize; }
-            set { groupSize = value; }
+            set
+            {
+                if (value != groupSize)
+                {
+                    groupSize = value;
+                    OnPropertyChanged("GroupSize");
+                }
+            }
         }
 
         private int periodNum;
@@ -69,7 +94,13 @@ namespace SubjectSchedule
         public int PeriodNum
         {
             get { return periodNum; }
-            set { periodNum = value; }
+            set {
+                if (value != periodNum)
+                {
+                    periodNum = value;
+                    OnPropertyChanged("PeriodNum");
+                }
+            }
         }
 
         private bool projector;
@@ -77,7 +108,13 @@ namespace SubjectSchedule
         public bool Projector
         {
             get { return projector; }
-            set { projector = value; }
+            set {
+                if (value != projector)
+                {
+                    projector = value;
+                    OnPropertyChanged("Projector");
+                }
+            }
         }
 
         private bool board;
@@ -85,7 +122,13 @@ namespace SubjectSchedule
         public bool Board
         {
             get { return board; }
-            set { board = value; }
+            set {
+                if (value != board)
+                {
+                    board = value;
+                    OnPropertyChanged("Board");
+                }
+            }
         }
 
         private bool smartBoard;
@@ -93,7 +136,13 @@ namespace SubjectSchedule
         public bool SmartBoard
         {
             get { return smartBoard; }
-            set { smartBoard = value; }
+            set {
+                if (value != smartBoard)
+                {
+                    smartBoard = value;
+                    OnPropertyChanged("SmartBoard");
+                }
+            }
         }
 
         private string os;
@@ -101,7 +150,13 @@ namespace SubjectSchedule
         public string Os //moze biti w, l ili svejedno
         {
             get { return os; }
-            set { os = value; }
+            set {
+                if (value != os)
+                {
+                    os = value;
+                    OnPropertyChanged("Os");
+                }
+            }
         }
 
         private Softvare softvare;
@@ -109,7 +164,13 @@ namespace SubjectSchedule
         public Softvare Softvare
         {
             get { return softvare; }
-            set { softvare = value; }
+            set {
+                if (value != softvare)
+                {
+                    softvare = value;
+                    OnPropertyChanged("Softvare");
+                }
+            }
         }
 
         public Subject() { }

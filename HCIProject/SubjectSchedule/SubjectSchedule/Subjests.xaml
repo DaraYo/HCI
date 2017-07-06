@@ -9,15 +9,63 @@
 
     <DockPanel>
         <Grid>
-            <ListView x:Name="ListViewN" Background="Transparent" ItemsSource="{Binding Subs}" >
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <WrapPanel>
-                            <TextBlock Text="{Binding Name}" FontWeight="Bold" />
-                        </WrapPanel>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <DataGrid x:Name="dgSubs" Height="Auto" IsReadOnly="True" VerticalAlignment="Top" AutoGenerateColumns="False" ColumnWidth="Auto" IsSynchronizedWithCurrentItem="True"  Width="Auto" ItemsSource="{Binding Path=Subs}">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Oznaka"  Binding="{Binding Label}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Naziv"  Binding="{Binding Name}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Kurs"  Binding="{Binding Course}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Opis"  Binding="{Binding Description}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Velicina grupe"  Binding="{Binding GroupSize}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Termini u danu"  Binding="{Binding PeriodNum}"></DataGridTextColumn>
+                    <DataGridCheckBoxColumn Header="Projektor"  Binding="{Binding Projector}"></DataGridCheckBoxColumn>
+                    <DataGridCheckBoxColumn Header="Tabla" Binding="{Binding Board}"></DataGridCheckBoxColumn>
+                    <DataGridCheckBoxColumn Header="Pametna tabla" Binding="{Binding SmartBoard}"></DataGridCheckBoxColumn>
+                    <DataGridTextColumn Header="Naziv" Binding="{Binding Os}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Oznaka" Binding="{Binding Softvare}"></DataGridTextColumn>
+                    <DataGridTemplateColumn>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate >
+                                <Button>Show/Hide</Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+            <Grid Grid.Column="0" Grid.Row="1" DataContext="{Binding ElementName=dgSubs,Path=SelectedItem}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                
+                <TextBlock Grid.Column="0" Grid.Row="0">Termini u danu:</TextBlock>
+                <TextBlock Grid.Column="0" Grid.Row="1">Projektor:</TextBlock>
+                <TextBlock Grid.Column="0" Grid.Row="2">Tabla:</TextBlock>
+                <TextBlock Grid.Column="0" Grid.Row="3">Pametna tabla:</TextBlock>
+                <TextBlock Grid.Column="0" Grid.Row="4">Operativni sistem:</TextBlock>
+                <TextBlock Grid.Column="0" Grid.Row="5">Softver:</TextBlock>
+
+                <TextBox Grid.Column="1" Grid.Row="0" Text="{Binding Path=PeriodNum}"></TextBox>
+                <CheckBox Grid.Column="1" Grid.Row="1" IsChecked="{Binding Path=Board}"/>
+                <CheckBox Grid.Column="1" Grid.Row="2" IsChecked="{Binding Path=Projector}"/>
+                <CheckBox Grid.Column="1" Grid.Row="3" IsChecked="{Binding Path=SmartBoard}"/>
+                <TextBox Grid.Column="1" Grid.Row="4" Text="{Binding Path=Os}"></TextBox>
+                <TextBox Grid.Column="1" Grid.Row="5" Text="{Binding Path=Softvare}"></TextBox>
+            </Grid>
 
         </Grid>
     </DockPanel>
