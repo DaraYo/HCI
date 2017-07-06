@@ -3992,5 +3992,17 @@ namespace SubjectSchedule
             TB200.FontSize = 12;
             SaturdayTB.FontSize = 12;
         }
+
+        private void TextBlock_MouseEnter(object sender, MouseEventArgs e)
+        {
+            TextBlock obj = sender as TextBlock;
+            obj.FontSize = 25;
+        }
+
+        private void TextBlock_MouseLeave(object sender, MouseEventArgs e)
+        {
+            TextBlock obj = sender as TextBlock;
+            obj.FontSize = 12;
+        }
     }
 }

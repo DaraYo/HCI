@@ -45,6 +45,7 @@
                     <RowDefinition />
                     <RowDefinition />
                     <RowDefinition />
+                    <RowDefinition />
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition />
@@ -87,7 +88,7 @@
                 <TextBlock x:Name ="TB33" Grid.Column="3" Grid.Row="3"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop33" MouseEnter="TextBlock_MouseEnter33" MouseLeave="TextBlock_MouseLeave33" Text="{Binding termSubjs3[3]}"/>
                 <TextBlock x:Name ="TB34" Grid.Column="4" Grid.Row="3"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop34" MouseEnter="TextBlock_MouseEnter34" MouseLeave="TextBlock_MouseLeave34" Text="{Binding termSubjs4[3]}"/>
                 <TextBlock x:Name ="TB35" Grid.Column="5" Grid.Row="3"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop35" MouseEnter="TextBlock_MouseEnter35" MouseLeave="TextBlock_MouseLeave35" Text="{Binding termSubjs5[3]}"/>
-                <TextBlock x:Name ="TB36" Grid.Column="6" Grid.Row="4"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop36" MouseEnter="TextBlock_MouseEnter36" MouseLeave="TextBlock_MouseLeave36" Text="{Binding termSubjs6[3]}"/>
+                <TextBlock x:Name ="TB36" Grid.Column="6" Grid.Row="3"  AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop36" MouseEnter="TextBlock_MouseEnter36" MouseLeave="TextBlock_MouseLeave36" Text="{Binding termSubjs6[3]}"/>
 
 
                 <TextBlock x:Name ="TB40"  Grid.Column="0" Grid.Row="4"  Text="{Binding termini[4]}"/>
@@ -235,7 +236,7 @@
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <WrapPanel>
-                                <TextBlock Text="{Binding Label}" FontWeight="Bold" />
+                                <TextBlock Width="160" MouseEnter="TextBlock_MouseEnter" MouseLeave="TextBlock_MouseLeave" Text="{Binding Label}" FontWeight="Bold" />
                             </WrapPanel>
                         </DataTemplate>
                     </ListView.ItemTemplate>
