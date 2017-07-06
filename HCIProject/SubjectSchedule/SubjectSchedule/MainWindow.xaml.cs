@@ -324,6 +324,17 @@ namespace SubjectSchedule
             if (!e.Data.GetDataPresent("myFormat") || sender == e.Source)
             {
                 e.Effects = DragDropEffects.None;
+                TextBlock tmp = sender as TextBlock;
+                tmp.Background = Brushes.Green;
+            }
+        }
+        private void ListView_Dragleave(object sender,DragEventArgs e)
+        {
+            if (!e.Data.GetDataPresent("myFormat") || sender == e.Source)
+            {
+                e.Effects = DragDropEffects.None;
+                TextBlock tmp = sender as TextBlock;
+                tmp.Background = Brushes.Transparent;
             }
         }
 
@@ -4042,6 +4053,11 @@ namespace SubjectSchedule
         {
             MessageBox.Show("Ova aplikacija namenjena je  vođenje evidencije o rasporedu predmeta u računarskom centru. Nastava iz odredjenih predmeta izvodi se u ucionicama koje imaju svoj naziv.Svaki predmet izvodi se u odredjenom terminu i u odredjenom kabinetu. Ukoliko zelite da neki predmet postavite u raspored potrebno je  najpre da izabere ucionicu u kojoj se taj predmet izvod a zatim da ga prevucete iz liste predmeta i postavite na zeljeni dan i termin. Brisanje predmeta iz kalendara mozete uraditi primenom precice ***** ", "Help!");
 
+
+        }
+
+        private void TB11_DragLeave(object sender, DragEventArgs e)
+        {
 
         }
     }

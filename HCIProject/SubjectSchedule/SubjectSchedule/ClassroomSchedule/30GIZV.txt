@@ -1,9 +1,9 @@
-;;;;USI;MRS
+OE;;;;USI;MRS
 ;;OE;ISA;USI;FI
 ;;;MRS;ISA;MA
 ISA;;AL;;OE;WP
-MRS;;;OOP2;;MA2
-;;;;ISA;PIGKUT
+MRS;OOP2;;MRS;;MA2
+;;;FI;ISA;PIGKUT
 ;;;;;MA2
 ;;MA2;;USI;AL
 ;;PIGKUT;PIGKUT;WP;PIGKUT
@@ -11,7 +11,7 @@ MRS;;;OOP2;;MA2
 ;ISA;;;;OE
 ;;MA2;PIGKUT;;WP
 ;;;;AL;MA
-;;;;;
+;;;;;AL
 ;;;;;
 ;;;;;
 ;;;ISA;;
