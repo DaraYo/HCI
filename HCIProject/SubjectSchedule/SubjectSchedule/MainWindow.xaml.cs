@@ -271,7 +271,7 @@ namespace SubjectSchedule
                     g = 1;
                 if (s.GroupSize > c.NumbOfSpots)
                     g = 1;
-                //if(g!=1)
+                if(g!=1)
                     ocs.Add(s);
             }
         }
@@ -343,7 +343,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs1[1] = student.Label;
                 saveSchedule();
             }
@@ -353,7 +353,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs2[1] = student.Label;
                 saveSchedule();
             }
@@ -363,7 +363,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs3[1] = student.Label;
                 saveSchedule();
             }
@@ -373,7 +373,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs4[1] = student.Label;
                 saveSchedule();
             }
@@ -383,7 +383,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs5[1] = student.Label;
                 saveSchedule();
             }
@@ -393,7 +393,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs6[1] = student.Label;
                 saveSchedule();
             }
@@ -404,7 +404,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs1[1] = student.Label;
                 saveSchedule();
             }
@@ -414,7 +414,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs2[1] = student.Label;
                 saveSchedule();
             }
@@ -424,7 +424,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs3[1] = student.Label;
                 saveSchedule();
             }
@@ -435,7 +435,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs4[1] = student.Label;
                 saveSchedule();
             }
@@ -445,7 +445,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs5[1] = student.Label;
                 saveSchedule();
             }
@@ -455,7 +455,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs6[1] = student.Label;
                 saveSchedule();
             }
@@ -466,7 +466,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs1[2] = student.Label;
                 saveSchedule();
             }
@@ -476,7 +476,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs2[2] = student.Label;
                 saveSchedule();
             }
@@ -486,7 +486,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs3[2] = student.Label;
                 saveSchedule();
             }
@@ -496,7 +496,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs4[2] = student.Label;
                 saveSchedule();
             }
@@ -506,7 +506,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs5[2] = student.Label;
                 saveSchedule();
             }
@@ -516,7 +516,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs6[2] = student.Label;
                 saveSchedule();
             }
@@ -527,7 +527,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs1[3] = student.Label;
                 saveSchedule();
             }
@@ -537,7 +537,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs2[3] = student.Label;
                 saveSchedule();
             }
@@ -547,7 +547,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs3[3] = student.Label;
                 saveSchedule();
             }
@@ -557,7 +557,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs4[3] = student.Label;
                 saveSchedule();
             }
@@ -567,7 +567,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs5[3] = student.Label;
                 saveSchedule();
             }
@@ -577,7 +577,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs6[3] = student.Label;
                 saveSchedule();
             }
@@ -588,7 +588,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs1[4] = student.Label;
                 saveSchedule();
             }
@@ -598,7 +598,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs2[4] = student.Label;
                 saveSchedule();
             }
@@ -608,7 +608,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs3[4] = student.Label;
                 saveSchedule();
             }
@@ -618,7 +618,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs4[4] = student.Label;
                 saveSchedule();
             }
@@ -628,7 +628,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs5[4] = student.Label;
                 saveSchedule();
             }
@@ -638,7 +638,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs6[4] = student.Label;
                 saveSchedule();
             }
@@ -649,7 +649,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs1[5] = student.Label;
                 saveSchedule();
             }
@@ -659,7 +659,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs2[5] = student.Label;
                 saveSchedule();
             }
@@ -669,7 +669,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs3[5] = student.Label;
                 saveSchedule();
             }
@@ -679,7 +679,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs4[5] = student.Label;
                 saveSchedule();
             }
@@ -689,7 +689,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs5[5] = student.Label;
                 saveSchedule();
             }
@@ -699,7 +699,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs6[5] = student.Label;
                 saveSchedule();
             }
@@ -710,7 +710,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs1[6] = student.Label;
                 saveSchedule();
             }
@@ -720,7 +720,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs2[6] = student.Label;
                 saveSchedule();
             }
@@ -730,7 +730,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs3[6] = student.Label;
                 saveSchedule();
             }
@@ -740,7 +740,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs4[6] = student.Label;
                 saveSchedule();
             }
@@ -750,7 +750,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs5[6] = student.Label;
                 saveSchedule();
             }
@@ -760,7 +760,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs6[6] = student.Label;
                 saveSchedule();
             }
@@ -771,7 +771,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs1[7] = student.Label;
                 saveSchedule();
             }
@@ -781,7 +781,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs2[7] = student.Label;
                 saveSchedule();
             }
@@ -791,7 +791,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs3[7] = student.Label;
                 saveSchedule();
             }
@@ -801,7 +801,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs4[7] = student.Label;
                 saveSchedule();
             }
@@ -811,7 +811,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs5[7] = student.Label;
                 saveSchedule();
             }
@@ -821,7 +821,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs6[7] = student.Label;
                 saveSchedule();
             }
@@ -832,7 +832,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs1[8] = student.Label;
                 saveSchedule();
             }
@@ -842,7 +842,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs2[8] = student.Label;
                 saveSchedule();
             }
@@ -852,7 +852,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs3[8] = student.Label;
                 saveSchedule();
             }
@@ -862,7 +862,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs4[8] = student.Label;
                 saveSchedule();
             }
@@ -872,7 +872,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs5[8] = student.Label;
                 saveSchedule();
             }
@@ -882,7 +882,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs6[8] = student.Label;
                 saveSchedule();
             }
@@ -893,7 +893,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs1[9] = student.Label;
                 saveSchedule();
             }
@@ -903,7 +903,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs2[9] = student.Label;
                 saveSchedule();
             }
@@ -913,7 +913,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs3[9] = student.Label;
                 saveSchedule();
             }
@@ -923,7 +923,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs4[9] = student.Label;
                 saveSchedule();
             }
@@ -933,7 +933,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs5[9] = student.Label;
                 saveSchedule();
             }
@@ -943,7 +943,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs6[9] = student.Label;
                 saveSchedule();
             }
@@ -954,7 +954,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs1[10] = student.Label;
                 saveSchedule();
             }
@@ -964,7 +964,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs2[10] = student.Label;
                 saveSchedule();
             }
@@ -974,7 +974,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs3[10] = student.Label;
                 saveSchedule();
             }
@@ -984,7 +984,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs4[10] = student.Label;
                 saveSchedule();
             }
@@ -994,7 +994,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs5[10] = student.Label;
                 saveSchedule();
             }
@@ -1004,7 +1004,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs6[10] = student.Label;
                 saveSchedule();
             }
@@ -1015,7 +1015,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs1[11] = student.Label;
                 saveSchedule();
             }
@@ -1025,7 +1025,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs2[11] = student.Label;
                 saveSchedule();
             }
@@ -1035,7 +1035,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs3[11] = student.Label;
                 saveSchedule();
             }
@@ -1045,7 +1045,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs4[11] = student.Label;
                 saveSchedule();
             }
@@ -1055,7 +1055,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs5[11] = student.Label;
                 saveSchedule();
             }
@@ -1065,7 +1065,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs6[11] = student.Label;
                 saveSchedule();
             }
@@ -1076,7 +1076,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs1[12] = student.Label;
                 saveSchedule();
             }
@@ -1086,7 +1086,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs2[12] = student.Label;
                 saveSchedule();
             }
@@ -1096,7 +1096,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs3[12] = student.Label;
                 saveSchedule();
             }
@@ -1106,7 +1106,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs4[12] = student.Label;
                 saveSchedule();
             }
@@ -1116,7 +1116,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs5[12] = student.Label;
                 saveSchedule();
             }
@@ -1126,7 +1126,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs6[12] = student.Label;
                 saveSchedule();
             }
@@ -1137,7 +1137,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs1[13] = student.Label;
                 saveSchedule();
             }
@@ -1147,7 +1147,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs2[13] = student.Label;
                 saveSchedule();
             }
@@ -1157,7 +1157,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs3[13] = student.Label;
                 saveSchedule();
             }
@@ -1167,7 +1167,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs4[13] = student.Label;
                 saveSchedule();
             }
@@ -1177,7 +1177,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs5[13] = student.Label;
                 saveSchedule();
             }
@@ -1187,7 +1187,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs6[13] = student.Label;
                 saveSchedule();
             }
@@ -1198,7 +1198,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs1[14] = student.Label;
                 saveSchedule();
             }
@@ -1208,7 +1208,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs2[14] = student.Label;
                 saveSchedule();
             }
@@ -1218,7 +1218,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs3[14] = student.Label;
                 saveSchedule();
             }
@@ -1228,7 +1228,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs4[14] = student.Label;
                 saveSchedule();
             }
@@ -1238,7 +1238,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs5[14] = student.Label;
                 saveSchedule();
             }
@@ -1248,7 +1248,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs6[14] = student.Label;
                 saveSchedule();
             }
@@ -1259,7 +1259,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs1[15] = student.Label;
                 saveSchedule();
             }
@@ -1269,7 +1269,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs2[15] = student.Label;
                 saveSchedule();
             }
@@ -1279,7 +1279,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs3[15] = student.Label;
                 saveSchedule();
             }
@@ -1289,7 +1289,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs4[15] = student.Label;
                 saveSchedule();
             }
@@ -1299,7 +1299,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs5[15] = student.Label;
                 saveSchedule();
             }
@@ -1309,7 +1309,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs6[15] = student.Label;
                 saveSchedule();
             }
@@ -1320,7 +1320,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs1[16] = student.Label;
                 saveSchedule();
             }
@@ -1330,7 +1330,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs2[16] = student.Label;
                 saveSchedule();
             }
@@ -1340,7 +1340,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs3[16] = student.Label;
                 saveSchedule();
             }
@@ -1350,7 +1350,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs4[16] = student.Label;
                 saveSchedule();
             }
@@ -1360,7 +1360,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs5[16] = student.Label;
                 saveSchedule();
             }
@@ -1370,7 +1370,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs6[16] = student.Label;
                 saveSchedule();
             }
@@ -1381,7 +1381,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs1[17] = student.Label;
                 saveSchedule();
             }
@@ -1391,7 +1391,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs2[17] = student.Label;
                 saveSchedule();
             }
@@ -1401,7 +1401,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs3[17] = student.Label;
                 saveSchedule();
             }
@@ -1411,7 +1411,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs4[17] = student.Label;
                 saveSchedule();
             }
@@ -1421,7 +1421,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs5[17] = student.Label;
                 saveSchedule();
             }
@@ -1431,7 +1431,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs6[17] = student.Label;
                 saveSchedule();
             }
@@ -1442,7 +1442,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs1[18] = student.Label;
                 saveSchedule();
             }
@@ -1452,7 +1452,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs2[18] = student.Label;
                 saveSchedule();
             }
@@ -1462,7 +1462,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs3[18] = student.Label;
                 saveSchedule();
             }
@@ -1472,7 +1472,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs4[18] = student.Label;
                 saveSchedule();
             }
@@ -1482,7 +1482,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs5[18] = student.Label;
                 saveSchedule();
             }
@@ -1492,7 +1492,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs6[18] = student.Label;
                 saveSchedule();
             }
@@ -1503,7 +1503,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs1[19] = student.Label;
                 saveSchedule();
             }
@@ -1513,7 +1513,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs2[19] = student.Label;
                 saveSchedule();
             }
@@ -1523,7 +1523,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs3[19] = student.Label;
                 saveSchedule();
             }
@@ -1533,7 +1533,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs4[19] = student.Label;
                 saveSchedule();
             }
@@ -1543,7 +1543,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs5[19] = student.Label;
                 saveSchedule();
             }
@@ -1553,7 +1553,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs6[19] = student.Label;
                 saveSchedule();
             }
@@ -1564,7 +1564,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs1[20] = student.Label;
                 saveSchedule();
             }
@@ -1574,7 +1574,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs2[20] = student.Label;
                 saveSchedule();
             }
@@ -1584,7 +1584,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs3[20] = student.Label;
                 saveSchedule();
             }
@@ -1594,7 +1594,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs4[20] = student.Label;
                 saveSchedule();
             }
@@ -1604,7 +1604,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs5[20] = student.Label;
                 saveSchedule();
             }
@@ -1614,7 +1614,7 @@ namespace SubjectSchedule
             if (e.Data.GetDataPresent("myFormat"))
             {
                 Subject student = e.Data.GetData("myFormat") as Subject;
-                ocs.Remove(student);
+
                 termSubjs6[20] = student.Label;
                 saveSchedule();
             }
@@ -4059,6 +4059,13 @@ namespace SubjectSchedule
         private void TB11_DragLeave(object sender, DragEventArgs e)
         {
 
+        }
+
+        private void TB11_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            TextBlock tmp = sender as TextBlock;
+            tmp.Text = "";
+            saveSchedule();
         }
     }
 }
