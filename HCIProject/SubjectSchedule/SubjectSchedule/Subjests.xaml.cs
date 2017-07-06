@@ -34,9 +34,13 @@ namespace SubjectSchedule
         public Subjests(MainWindow mw)
         {
             InitializeComponent();
-            this.mainWindow = mw;
+            Subs = new ObservableCollection<Subject>();
+            test();
+        }
+        public void test()
+        {
             String[] subjects = File.ReadAllLines("../../Subjects.txt");
-            List<Subject> l = new List<Subject>();
+            this.DataContext = this;
             if (subjects.Length != 0)
                 foreach (var su in subjects)
                 {
@@ -64,17 +68,8 @@ namespace SubjectSchedule
                     else
                         s.SmartBoard = false;
                     s.Os = parts[9];
-                    //s.Softvare = parts[10];
-                    l.Add(new Subject { Name = "Test" });
-                    //l.Add(s);
+                    Subs.Add(new Subject { Name = "Test" });
                 }
-            dgSubs.Items.Refresh();
-            Subs = new ObservableCollection<Subject>(l);
-
-            /*public Subjests(MainWindow mainWindow)
-            {
-                this.mainWindow = mainWindow;
-            }*/
         }
     }
 }

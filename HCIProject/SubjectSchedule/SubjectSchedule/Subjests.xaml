@@ -6,16 +6,19 @@
         xmlns:local="clr-namespace:SubjectSchedule"
         mc:Ignorable="d"
         Title="Subjests" Height="300" Width="300">
-    <Grid>
-        <ListView x:Name="dgSubs" Background="Transparent" ItemsSource="{Binding Subs}">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <WrapPanel>
-                        <TextBlock Text="{Binding Label}" FontWeight="Bold" />
-                        <TextBlock Text="{Binding Name}" FontWeight="Bold" />
-                    </WrapPanel>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-    </Grid>
+
+    <DockPanel>
+        <Grid>
+            <ListView x:Name="ListViewN" Background="Transparent" ItemsSource="{Binding Subs}" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <WrapPanel>
+                            <TextBlock Text="{Binding Name}" FontWeight="Bold" />
+                        </WrapPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </Grid>
+    </DockPanel>
 </Window>
