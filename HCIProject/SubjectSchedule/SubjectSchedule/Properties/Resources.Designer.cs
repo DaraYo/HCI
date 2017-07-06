@@ -61,13 +61,29 @@ namespace SubjectSchedule.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 20GOZW;Labaratorija za MRS;20;false;false;true;GGEZPZ;W
-        ///30GIZV;Labaratorija za ISA;30;false;false;true;PZMW20;W
-        ///10ZXXY;Sala za experimente;10;true;true;false;EXLZ10;L.
+        ///   Looks up a localized string similar to 20GOZW;Laboratorija za MRS;20;false;false;false;GGEZPZ;W
+        ///30GIZV;Laboratorija za ISA;30;true;true;ture;PZMW20;W
+        ///10ZXXY;Sala za eksperimente;10;true;true;false;EXLZ10;L
+        ///01NNM;Sala za prezentacije;20;true;true;true;FFHJ10;W
+        ///02NNK;Laboratorija za matematiku;20;false;true;false;KKKNM;W
+        ///03NNL;Laboratorija za fiziku;20;true;true;true;KKKJJJ;L
+        ///04RTR;Laboratorija za elektrotehniku;15;true;true;false;WPPW;W
+        ///05RTR;Sala za pisanu i govornu komunikaciju;20;true;false;false;PIGU;W
+        ///06OOJ;Sala za algebru;20;false;t [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string classrooms {
             get {
                 return ResourceManager.GetString("classrooms", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] Help {
+            get {
+                object obj = ResourceManager.GetObject("Help", resourceCulture);
+                return ((byte[])(obj));
             }
         }
         
@@ -77,27 +93,18 @@ namespace SubjectSchedule.Properties {
         ///using System.Linq;
         ///using System.Text;
         ///using System.Threading.Tasks;
+        ///using System.ComponentModel;
         ///
         ///namespace SubjectSchedule
         ///{
-        ///    public class Subject
+        ///    public class Subject : INotifyPropertyChanged
         ///    {
-        ///        private string label;
-        ///        public string Label
+        ///        public event PropertyChangedEventHandler PropertyChanged;
+        ///        protected virtual void OnPropertyChanged(string Label)
         ///        {
-        ///            get { return label; }
-        ///            set { label = value; }
-        ///        }
-        ///
-        ///        private string name;
-        ///
-        ///        public string Name
-        ///        {
-        ///            get { return name; }
-        ///            set { name = value; }
-        ///        }
-        ///
-        ///        private Co [rest of string was truncated]&quot;;.
+        ///            if (PropertyChanged != null)
+        ///            {
+        ///                PropertyChanged(this, new PropertyChangedEventArgs(Label [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Subject {
             get {

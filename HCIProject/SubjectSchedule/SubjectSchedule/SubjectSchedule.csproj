@@ -100,6 +100,7 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Resource Include="Resources\Help.chm" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -110,9 +111,7 @@
   <ItemGroup>
     <Resource Include="Subjects.txt" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Resource Include="termini.txt" />
   </ItemGroup>

@@ -151,10 +151,18 @@ namespace SubjectSchedule
                  };
                 lb.Add(b);
                 Canvas.SetLeft(lb[i], 5);
-                Canvas.SetTop(lb[i], i*50+5);
+                Canvas.SetTop(lb[i], i*50+55);
                 ClassroomCanvas.Children.Add(lb[i]);
                 
             }
+            TextBlock tb = new TextBlock();
+            tb.TextAlignment = TextAlignment.Center;
+            tb.Text = "Ucionice";
+
+            Canvas.SetLeft(tb, 5);
+            Canvas.SetTop(tb,  25);
+            ClassroomCanvas.Children.Add(tb);
+
         }
         public void testFunction(String classRoom)
         {
@@ -4051,8 +4059,8 @@ namespace SubjectSchedule
         }
         private void HelpExecuted(object sender, ExecutedRoutedEventArgs e)
         {
-            MessageBox.Show("Ova aplikacija namenjena je  vođenje evidencije o rasporedu predmeta u računarskom centru. Nastava iz odredjenih predmeta izvodi se u ucionicama koje imaju svoj naziv.Svaki predmet izvodi se u odredjenom terminu i u odredjenom kabinetu. Ukoliko zelite da neki predmet postavite u raspored potrebno je  najpre da izabere ucionicu u kojoj se taj predmet izvod a zatim da ga prevucete iz liste predmeta i postavite na zeljeni dan i termin. Brisanje predmeta iz kalendara mozete uraditi primenom precice ***** ", "Help!");
-
+            //MessageBox.Show("Ova aplikacija namenjena je  vođenje evidencije o rasporedu predmeta u računarskom centru. Nastava iz odredjenih predmeta izvodi se u ucionicama koje imaju svoj naziv.Svaki predmet izvodi se u odredjenom terminu i u odredjenom kabinetu. Ukoliko zelite da neki predmet postavite u raspored potrebno je  najpre da izabere ucionicu u kojoj se taj predmet izvod a zatim da ga prevucete iz liste predmeta i postavite na zeljeni dan i termin. Brisanje predmeta iz kalendara mozete uraditi primenom precice ***** ", "Help!");
+            System.Diagnostics.Process.Start("../../Resource/Help.chm");
 
         }
 
