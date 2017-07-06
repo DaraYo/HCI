@@ -204,6 +204,7 @@ namespace SubjectSchedule
         }
         public void ClassRoomInfo(Classroom c)
         {
+            crInfo.Clear();
             crInfo.Add("Label: " + c.Label);
             crInfo.Add("Name: " + c.Name);
             crInfo.Add("Spots: " + c.NumbOfSpots);
