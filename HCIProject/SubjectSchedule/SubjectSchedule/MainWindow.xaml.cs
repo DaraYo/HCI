@@ -2090,7 +2090,7 @@ namespace SubjectSchedule
             TB50.Background = Brushes.Transparent;
             MondayTB.Background = Brushes.Transparent;
             TB51.FontSize = 12;
-            TB40.FontSize = 12;
+            TB50.FontSize = 12;
             MondayTB.FontSize = 12;
         }
 
@@ -2676,21 +2676,21 @@ namespace SubjectSchedule
 
         private void TextBlock_MouseEnter101(object sender, MouseEventArgs e)
         {
-            TB10.Background = Brushes.Yellow;
-            TB10.Background = Brushes.Yellow;
+            TB101.Background = Brushes.Yellow;
+            TB100.Background = Brushes.Yellow;
             MondayTB.Background = Brushes.Yellow;
-            TB10.FontSize = 25;
-            TB10.FontSize = 25;
+            TB101.FontSize = 25;
+            TB100.FontSize = 25;
             MondayTB.FontSize = 25;
         }
 
         private void TextBlock_MouseLeave101(object sender, MouseEventArgs e)
         {
-            TB10.Background = Brushes.Transparent;
-            TB10.Background = Brushes.Transparent;
+            TB101.Background = Brushes.Transparent;
+            TB100.Background = Brushes.Transparent;
             MondayTB.Background = Brushes.Transparent;
-            TB10.FontSize = 12;
-            TB10.FontSize = 12;
+            TB101.FontSize = 12;
+            TB100.FontSize = 12;
             MondayTB.FontSize = 12;
         }
 
@@ -2719,8 +2719,8 @@ namespace SubjectSchedule
             TB103.Background = Brushes.Yellow;
             TB100.Background = Brushes.Yellow;
             WednesdayTB.Background = Brushes.Yellow;
-            TB13.FontSize = 25;
-            TB10.FontSize = 25;
+            TB103.FontSize = 25;
+            TB100.FontSize = 25;
             WednesdayTB.FontSize = 25;
         }
 
@@ -2796,21 +2796,21 @@ namespace SubjectSchedule
 
         private void TextBlock_MouseEnter111(object sender, MouseEventArgs e)
         {
-            TB11.Background = Brushes.Yellow;
-            TB11.Background = Brushes.Yellow;
+            TB111.Background = Brushes.Yellow;
+            TB110.Background = Brushes.Yellow;
             MondayTB.Background = Brushes.Yellow;
-            TB11.FontSize = 25;
-            TB11.FontSize = 25;
+            TB111.FontSize = 25;
+            TB110.FontSize = 25;
             MondayTB.FontSize = 25;
         }
 
         private void TextBlock_MouseLeave111(object sender, MouseEventArgs e)
         {
-            TB11.Background = Brushes.Transparent;
-            TB11.Background = Brushes.Transparent;
+            TB111.Background = Brushes.Transparent;
+            TB110.Background = Brushes.Transparent;
             MondayTB.Background = Brushes.Transparent;
-            TB11.FontSize = 12;
-            TB11.FontSize = 12;
+            TB111.FontSize = 12;
+            TB110.FontSize = 12;
             MondayTB.FontSize = 12;
         }
 
@@ -2839,8 +2839,8 @@ namespace SubjectSchedule
             TB113.Background = Brushes.Yellow;
             TB110.Background = Brushes.Yellow;
             WednesdayTB.Background = Brushes.Yellow;
-            TB13.FontSize = 25;
-            TB11.FontSize = 25;
+            TB113.FontSize = 25;
+            TB110.FontSize = 25;
             WednesdayTB.FontSize = 25;
         }
 
@@ -2916,21 +2916,21 @@ namespace SubjectSchedule
 
         private void TextBlock_MouseEnter121(object sender, MouseEventArgs e)
         {
-            TB12.Background = Brushes.Yellow;
-            TB12.Background = Brushes.Yellow;
+            TB121.Background = Brushes.Yellow;
+            TB120.Background = Brushes.Yellow;
             MondayTB.Background = Brushes.Yellow;
-            TB12.FontSize = 25;
-            TB12.FontSize = 25;
+            TB121.FontSize = 25;
+            TB120.FontSize = 25;
             MondayTB.FontSize = 25;
         }
 
         private void TextBlock_MouseLeave121(object sender, MouseEventArgs e)
         {
-            TB12.Background = Brushes.Transparent;
-            TB12.Background = Brushes.Transparent;
+            TB121.Background = Brushes.Transparent;
+            TB120.Background = Brushes.Transparent;
             MondayTB.Background = Brushes.Transparent;
-            TB12.FontSize = 12;
-            TB12.FontSize = 12;
+            TB120.FontSize = 12;
+            TB121.FontSize = 12;
             MondayTB.FontSize = 12;
         }
 
@@ -2959,8 +2959,8 @@ namespace SubjectSchedule
             TB123.Background = Brushes.Yellow;
             TB120.Background = Brushes.Yellow;
             WednesdayTB.Background = Brushes.Yellow;
-            TB12.FontSize = 25;
-            TB12.FontSize = 25;
+            TB123.FontSize = 25;
+            TB120.FontSize = 25;
             WednesdayTB.FontSize = 25;
         }
 
@@ -3037,30 +3037,30 @@ namespace SubjectSchedule
 
         private void TextBlock_MouseEnter141(object sender, MouseEventArgs e)
         {
-            TB14.Background = Brushes.Yellow;
-            TB14.Background = Brushes.Yellow;
+            TB141.Background = Brushes.Yellow;
+            TB140.Background = Brushes.Yellow;
             MondayTB.Background = Brushes.Yellow;
-            TB14.FontSize = 25;
-            TB14.FontSize = 25;
+            TB141.FontSize = 25;
+            TB140.FontSize = 25;
             MondayTB.FontSize = 25;
         }
         private void TextBlock_MouseEnter131(object sender, MouseEventArgs e)
         {
-            TB13.Background = Brushes.Yellow;
-            TB13.Background = Brushes.Yellow;
+            TB131.Background = Brushes.Yellow;
+            TB130.Background = Brushes.Yellow;
             MondayTB.Background = Brushes.Yellow;
-            TB13.FontSize = 25;
-            TB13.FontSize = 25;
+            TB131.FontSize = 25;
+            TB130.FontSize = 25;
             MondayTB.FontSize = 25;
         }
 
         private void TextBlock_MouseLeave131(object sender, MouseEventArgs e)
         {
-            TB13.Background = Brushes.Transparent;
-            TB13.Background = Brushes.Transparent;
+            TB131.Background = Brushes.Transparent;
+            TB130.Background = Brushes.Transparent;
             MondayTB.Background = Brushes.Transparent;
-            TB13.FontSize = 12;
-            TB13.FontSize = 12;
+            TB131.FontSize = 12;
+            TB130.FontSize = 12;
             MondayTB.FontSize = 12;
         }
 
@@ -3089,8 +3089,8 @@ namespace SubjectSchedule
             TB133.Background = Brushes.Yellow;
             TB130.Background = Brushes.Yellow;
             WednesdayTB.Background = Brushes.Yellow;
-            TB13.FontSize = 25;
-            TB13.FontSize = 25;
+            TB133.FontSize = 25;
+            TB130.FontSize = 25;
             WednesdayTB.FontSize = 25;
         }
 
@@ -3165,11 +3165,11 @@ namespace SubjectSchedule
         }
         private void TextBlock_MouseLeave141(object sender, MouseEventArgs e)
         {
-            TB14.Background = Brushes.Transparent;
-            TB14.Background = Brushes.Transparent;
+            TB141.Background = Brushes.Transparent;
+            TB140.Background = Brushes.Transparent;
             MondayTB.Background = Brushes.Transparent;
-            TB14.FontSize = 12;
-            TB14.FontSize = 12;
+            TB141.FontSize = 12;
+            TB140.FontSize = 12;
             MondayTB.FontSize = 12;
         }
 
@@ -3198,8 +3198,8 @@ namespace SubjectSchedule
             TB143.Background = Brushes.Yellow;
             TB140.Background = Brushes.Yellow;
             WednesdayTB.Background = Brushes.Yellow;
-            TB13.FontSize = 25;
-            TB14.FontSize = 25;
+            TB143.FontSize = 25;
+            TB140.FontSize = 25;
             WednesdayTB.FontSize = 25;
         }
 
@@ -3275,21 +3275,21 @@ namespace SubjectSchedule
 
         private void TextBlock_MouseEnter151(object sender, MouseEventArgs e)
         {
-            TB15.Background = Brushes.Yellow;
-            TB15.Background = Brushes.Yellow;
+            TB151.Background = Brushes.Yellow;
+            TB150.Background = Brushes.Yellow;
             MondayTB.Background = Brushes.Yellow;
-            TB15.FontSize = 25;
-            TB15.FontSize = 25;
+            TB151.FontSize = 25;
+            TB150.FontSize = 25;
             MondayTB.FontSize = 25;
         }
 
         private void TextBlock_MouseLeave151(object sender, MouseEventArgs e)
         {
-            TB15.Background = Brushes.Transparent;
-            TB15.Background = Brushes.Transparent;
+            TB151.Background = Brushes.Transparent;
+            TB150.Background = Brushes.Transparent;
             MondayTB.Background = Brushes.Transparent;
-            TB15.FontSize = 12;
-            TB15.FontSize = 12;
+            TB151.FontSize = 12;
+            TB150.FontSize = 12;
             MondayTB.FontSize = 12;
         }
 
@@ -3318,8 +3318,8 @@ namespace SubjectSchedule
             TB153.Background = Brushes.Yellow;
             TB150.Background = Brushes.Yellow;
             WednesdayTB.Background = Brushes.Yellow;
-            TB13.FontSize = 25;
-            TB15.FontSize = 25;
+            TB153.FontSize = 25;
+            TB150.FontSize = 25;
             WednesdayTB.FontSize = 25;
         }
 
@@ -3395,21 +3395,21 @@ namespace SubjectSchedule
 
         private void TextBlock_MouseEnter161(object sender, MouseEventArgs e)
         {
-            TB16.Background = Brushes.Yellow;
-            TB16.Background = Brushes.Yellow;
+            TB161.Background = Brushes.Yellow;
+            TB160.Background = Brushes.Yellow;
             MondayTB.Background = Brushes.Yellow;
-            TB16.FontSize = 25;
-            TB16.FontSize = 25;
+            TB161.FontSize = 25;
+            TB160.FontSize = 25;
             MondayTB.FontSize = 25;
         }
 
         private void TextBlock_MouseLeave161(object sender, MouseEventArgs e)
         {
-            TB16.Background = Brushes.Transparent;
-            TB16.Background = Brushes.Transparent;
+            TB161.Background = Brushes.Transparent;
+            TB160.Background = Brushes.Transparent;
             MondayTB.Background = Brushes.Transparent;
-            TB16.FontSize = 12;
-            TB16.FontSize = 12;
+            TB161.FontSize = 12;
+            TB160.FontSize = 12;
             MondayTB.FontSize = 12;
         }
 
@@ -3438,8 +3438,8 @@ namespace SubjectSchedule
             TB163.Background = Brushes.Yellow;
             TB160.Background = Brushes.Yellow;
             WednesdayTB.Background = Brushes.Yellow;
-            TB13.FontSize = 25;
-            TB16.FontSize = 25;
+            TB163.FontSize = 25;
+            TB160.FontSize = 25;
             WednesdayTB.FontSize = 25;
         }
 
