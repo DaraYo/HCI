@@ -21,7 +21,29 @@
             <Grid Background="DarkSeaGreen" x:Name="ClassroomsList" HorizontalAlignment="Left" Height="635" Margin="0,36,0,0" VerticalAlignment="Top" Width="150">
                 <Canvas x:Name="ClassroomCanvas" HorizontalAlignment="Left" Height="648" VerticalAlignment="Top" Width="150" Margin="0,0,0,-13"/>
             </Grid>
-            <Grid x:Name="ClassroomInfo" Background="Orange" HorizontalAlignment="Left" Height="45" Margin="150,36,0,0" VerticalAlignment="Top" Width="1140" RenderTransformOrigin="0.499,1.472">
+            <Grid  x:Name="ClassroomInfo" Background="Orange" HorizontalAlignment="Left" Height="45" Margin="150,36,0,0" VerticalAlignment="Top" Width="1140" RenderTransformOrigin="0.499,1.472">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="250"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock x:Name="crLabel"  Grid.Column="0" Grid.Row="0" Text="{Binding crInfo[0]}"/>
+                <TextBlock x:Name="crName"  Grid.Column="1" Grid.Row="0" Text="{Binding crInfo[1]}"/>
+                <TextBlock x:Name="crSpots"  Grid.Column="2" Grid.Row="0" Text="{Binding crInfo[2]}"/>
+                <TextBlock x:Name="crProjector"  Grid.Column="3" Grid.Row="0" Text="{Binding crInfo[3]}"/>
+                <TextBlock x:Name="crBoard"  Grid.Column="4" Grid.Row="0" Text="{Binding crInfo[4]}"/>
+                <TextBlock x:Name="crSmBoard"  Grid.Column="5" Grid.Row="0" Text="{Binding crInfo[5]}"/>
+                <TextBlock x:Name="crSoft"  Grid.Column="6" Grid.Row="0" Text="{Binding crInfo[6]}" />
+                <TextBlock x:Name="crOS"  Grid.Column="7" Grid.Row="0" Text="{Binding crInfo[7]}" />
             </Grid>
             <Grid Background="LightGray" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="590" Margin="155,81,181,29"  Width="964" AllowDrop="True">
                 <Grid.RowDefinitions>

@@ -65,6 +65,12 @@ namespace SubjectSchedule
             get;
             set;
         }
+
+        public ObservableCollection<String> crInfo
+        {
+            get;
+            set;
+        }
         List<Subject> ls = new List<Subject>();
         Point startPoint = new Point();
         public MainWindow()
@@ -80,7 +86,7 @@ namespace SubjectSchedule
             termSubjs4 = new ObservableCollection<String>();
             termSubjs5 = new ObservableCollection<String>();
             termSubjs6 = new ObservableCollection<String>();
-
+            crInfo = new ObservableCollection<string>();
             String[] terms = File.ReadAllLines("../../termini.txt");
             termini = new ObservableCollection<String>(terms);
         }
@@ -121,7 +127,7 @@ namespace SubjectSchedule
                 }
                 else
                     cr.SmartBoard = false;
-                //cr.Softvare = info[6];
+                cr.Softvare = info[6];
                 cr.Os = info[7];
     
                 this.lc.Add(cr);
@@ -156,7 +162,6 @@ namespace SubjectSchedule
             }
             this.label = c.Label;
             loadClassroomSchedule();
-            ClassroomInfo.Children.Clear();
             ClassRoomInfo(c);
             AppendSubjects(c);
         }
@@ -195,10 +200,29 @@ namespace SubjectSchedule
         }
         public void ClassRoomInfo(Classroom c)
         {
-            TextBox tb = new TextBox();
-            tb.Text = c.Label + " " + c.Name;
-            tb.Background = Brushes.Transparent;
-            ClassroomInfo.Children.Add(tb);
+            crInfo.Add("Label: " + c.Label);
+            crInfo.Add("Name: " + c.Name);
+            crInfo.Add("Spots: " + c.NumbOfSpots);
+            if (c.Projector == true)
+                crInfo.Add("Projector: Yes");
+            else
+                crInfo.Add("Projector: No");
+
+            if (c.Board == true)
+                crInfo.Add("Board: Yes");
+            else
+                crInfo.Add("Board: No");
+
+            if (c.SmartBoard == true)
+                crInfo.Add("Projector: Yes");
+            else
+                crInfo.Add("Projector: No");
+
+            crInfo.Add("Software: " + c.Softvare);
+
+            crInfo.Add("OS: " + c.Os);
+
+
         }
         public void AppendSubjects(Classroom c)
         {

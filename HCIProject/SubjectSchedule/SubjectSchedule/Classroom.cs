@@ -56,9 +56,9 @@ namespace SubjectSchedule
             set { smartBoard = value; }
         }
 
-        private Softvare softvare;
+        private string softvare;
 
-        public Softvare Softvare
+        public string Softvare
         {
             get { return softvare; }
             set { softvare = value; }
