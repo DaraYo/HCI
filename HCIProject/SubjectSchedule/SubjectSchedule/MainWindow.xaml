@@ -10,10 +10,15 @@
     <DockPanel Background="DarkSeaGreen" HorizontalAlignment="Left"  LastChildFill="False" VerticalAlignment="Top" Width="1300" Height="700" >
         <Grid  VerticalAlignment="Top" Margin="0,0,0,0" Width="1300" Height="700">
             <ToolBarTray HorizontalAlignment="Left" Height="36" VerticalAlignment="Top">
-                <ToolBar Width="Auto" Height="30" x:Name="ToolBD" ToolBarTray.IsLocked="True" ToolBar.OverflowMode="Never" Background="LightPink">
-                    <Button  Click="Go_to_subjects" ToolTip="List of all subjects" >
+                <ToolBar Width="Auto" Height="30" x:Name="ToolBD" ToolBarTray.IsLocked="True" ToolBar.OverflowMode="Never" >
+                    <Button  Click="Go_to_subjects" ToolTip="List of all subjects" Background="LightSteelBlue" >
                         <StackPanel>
-                            <TextBlock>TABELA SVIH PREDMETA</TextBlock>
+                            <TextBlock>PRIKAZ SVIH PREDMETA</TextBlock>
+                        </StackPanel>
+                    </Button>
+                    <Button  Click="Go_to_classrooms" ToolTip="List of all classrooms" Background="LightSteelBlue">
+                        <StackPanel>
+                            <TextBlock>PRIKAZ SVIH UCIONICA</TextBlock>
                         </StackPanel>
                     </Button>
                 </ToolBar>

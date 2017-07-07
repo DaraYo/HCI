@@ -1638,12 +1638,6 @@ namespace SubjectSchedule
             File.WriteAllLines("../../ClassroomSchedule/"+this.label+".txt", lista);
         }
 
-        //#############################################################################################
-        private void Go_to_subjects(object sender, RoutedEventArgs e)
-        {
-            var allSubjects = new Subjests(this);
-            allSubjects.Show();
-        }
         private void TextBlock_MouseEnter11(object sender, MouseEventArgs e)
         {
             TB11.Background = Brushes.DarkSeaGreen;
@@ -4060,7 +4054,7 @@ namespace SubjectSchedule
         private void HelpExecuted(object sender, ExecutedRoutedEventArgs e)
         {
             //MessageBox.Show("Ova aplikacija namenjena je  vođenje evidencije o rasporedu predmeta u računarskom centru. Nastava iz odredjenih predmeta izvodi se u ucionicama koje imaju svoj naziv.Svaki predmet izvodi se u odredjenom terminu i u odredjenom kabinetu. Ukoliko zelite da neki predmet postavite u raspored potrebno je  najpre da izabere ucionicu u kojoj se taj predmet izvod a zatim da ga prevucete iz liste predmeta i postavite na zeljeni dan i termin. Brisanje predmeta iz kalendara mozete uraditi primenom precice ***** ", "Help!");
-            System.Diagnostics.Process.Start("../../Resource/Help.chm");
+            System.Diagnostics.Process.Start("C:/Users/dara9/Desktop/Help.chm");
 
         }
 
@@ -4074,6 +4068,19 @@ namespace SubjectSchedule
             TextBlock tmp = sender as TextBlock;
             tmp.Text = "";
             saveSchedule();
+        }
+
+        //#############################################################################################
+        private void Go_to_subjects(object sender, RoutedEventArgs e)
+        {
+            var allSubjects = new Subjests(this);
+            allSubjects.Show();
+        }
+
+        private void Go_to_classrooms(object sender, RoutedEventArgs e)
+        {
+            var allClassrooms = new Classrooms(this);
+            allClassrooms.Show();
         }
     }
 }

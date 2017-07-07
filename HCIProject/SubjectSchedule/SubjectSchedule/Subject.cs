@@ -17,7 +17,7 @@ namespace SubjectSchedule
                 PropertyChanged(this, new PropertyChangedEventArgs(Label));
             }
         }
-    
+
         private string label;
         public string Label
         {
@@ -37,7 +37,8 @@ namespace SubjectSchedule
         public string Name
         {
             get { return name; }
-            set {
+            set
+            {
                 if (value != name)
                 {
                     name = value;
@@ -46,18 +47,12 @@ namespace SubjectSchedule
             }
         }
 
-        private Course course;
+        private string course;
 
-        public Course Course
+        public string Course
         {
             get { return course; }
-            set {
-                if (value != course)
-                {
-                    course = value;
-                    OnPropertyChanged("Course");
-                }
-            }
+            set { course = value; }
         }
 
         private string description;
@@ -65,13 +60,7 @@ namespace SubjectSchedule
         public string Description
         {
             get { return description; }
-            set {
-                if (value != description)
-                {
-                    description = value;
-                    OnPropertyChanged("Description");
-                }
-            }
+            set { description = value; }
         }
 
         private int groupSize;
@@ -79,14 +68,7 @@ namespace SubjectSchedule
         public int GroupSize
         {
             get { return groupSize; }
-            set
-            {
-                if (value != groupSize)
-                {
-                    groupSize = value;
-                    OnPropertyChanged("GroupSize");
-                }
-            }
+            set { groupSize = value; }
         }
 
         private int periodNum;
@@ -94,13 +76,7 @@ namespace SubjectSchedule
         public int PeriodNum
         {
             get { return periodNum; }
-            set {
-                if (value != periodNum)
-                {
-                    periodNum = value;
-                    OnPropertyChanged("PeriodNum");
-                }
-            }
+            set { periodNum = value; }
         }
 
         private bool projector;
@@ -108,13 +84,7 @@ namespace SubjectSchedule
         public bool Projector
         {
             get { return projector; }
-            set {
-                if (value != projector)
-                {
-                    projector = value;
-                    OnPropertyChanged("Projector");
-                }
-            }
+            set { projector = value; }
         }
 
         private bool board;
@@ -122,13 +92,7 @@ namespace SubjectSchedule
         public bool Board
         {
             get { return board; }
-            set {
-                if (value != board)
-                {
-                    board = value;
-                    OnPropertyChanged("Board");
-                }
-            }
+            set { board = value; }
         }
 
         private bool smartBoard;
@@ -136,13 +100,7 @@ namespace SubjectSchedule
         public bool SmartBoard
         {
             get { return smartBoard; }
-            set {
-                if (value != smartBoard)
-                {
-                    smartBoard = value;
-                    OnPropertyChanged("SmartBoard");
-                }
-            }
+            set { smartBoard = value; }
         }
 
         private string os;
@@ -150,27 +108,15 @@ namespace SubjectSchedule
         public string Os //moze biti w, l ili svejedno
         {
             get { return os; }
-            set {
-                if (value != os)
-                {
-                    os = value;
-                    OnPropertyChanged("Os");
-                }
-            }
+            set { os = value; }
         }
 
-        private Softvare softvare;
+        private string softvare;
 
-        public Softvare Softvare
+        public string Softvare
         {
             get { return softvare; }
-            set {
-                if (value != softvare)
-                {
-                    softvare = value;
-                    OnPropertyChanged("Softvare");
-                }
-            }
+            set { softvare = value; }
         }
 
         public Subject() { }
